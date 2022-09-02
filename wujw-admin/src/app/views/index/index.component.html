@@ -1,0 +1,336 @@
+<nav
+  class="top-0 fixed z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg bg-white shadow"
+>
+  <div
+    class="container px-4 mx-auto flex flex-wrap items-center justify-between"
+  >
+    <div
+      class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start"
+    >
+      <a
+        [routerLink]="['/']"
+        class="text-blueGray-700 text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
+        href="#pablo"
+      >
+        Wendongwoxin
+      </a>
+      <button
+        class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+        type="button"
+        (click)="setNavbarOpen()"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+    <div
+      class="lg:flex flex-grow items-center"
+      [ngClass]="{ hidden: !navbarOpen, block: navbarOpen }"
+      id="example-navbar-warning"
+    >
+      <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
+        <li class="flex items-center">
+          <app-index-dropdown class="block"></app-index-dropdown>
+        </li>
+        <li class="flex items-center">
+          <a
+            class="hover:text-blueGray-500 text-blueGray-700 px-3 py-2 flex items-center text-xs uppercase font-bold"
+            target="_blank"
+          >
+            <i
+              class="text-blueGray-400 fa-solid fa-envelope text-lg leading-lg"
+            ></i>
+            <span class="lg:hidden inline-block ml-2">Share</span>
+          </a>
+        </li>
+
+        <li class="flex items-center">
+          <a
+            class="hover:text-blueGray-500 text-blueGray-700 px-3 py-2 flex items-center text-xs uppercase font-bold"
+            href="https://twitter.com/wendongwoxin"
+            target="_blank"
+          >
+            <i class="text-blueGray-400 fab fa-twitter text-lg leading-lg"></i>
+            <span class="lg:hidden inline-block ml-2">Tweet</span>
+          </a>
+        </li>
+
+        <li class="flex items-center">
+          <a
+            class="hover:text-blueGray-500 text-blueGray-700 px-3 py-2 flex items-center text-xs uppercase font-bold"
+            href="https://github.com/wendongwoxin"
+            target="_blank"
+          >
+            <i class="text-blueGray-400 fab fa-github text-lg leading-lg"></i>
+            <span class="lg:hidden inline-block ml-2">Star</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<section class="header relative pt-16 items-center flex h-screen max-h-860-px">
+  <div class="container mx-auto items-center flex flex-wrap">
+    <div class="w-full md:w-8/12 lg:w-6/12 xl:w-6/12 px-4">
+      <div class="pt-32 sm:pt-0">
+        <h2 class="font-semibold text-4xl text-blueGray-600">
+          Wendongwoxin - Everything can be better!
+        </h2>
+        <p class="mt-4 text-lg leading-relaxed text-blueGray-500">
+          Jinwen Wu, graduated from Hefei University of Technology with a major
+          in Computer and Science, now a front-end development engineer.I am
+          looking forward to learning and sharing front-end related knowledge
+          with you all, Of course, I will not refuse other related
+          technologies.This is also the original intention of my blog.
+        </p>
+        <div class="mt-12">
+          <a
+            href="/"
+            target="_blank"
+            class="get-started text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-red-600 active:bg-red-700 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
+          >
+            More info
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <img
+    class="absolute top-0 b-auto right-0 pt-16 sm:w-6/12 -mt-48 sm:mt-0 w-10/12 max-h-860-px"
+    src="assets/images/main-base.png"
+    alt="..."
+  />
+</section>
+
+<section class="mt-48 md:mt-40 pb-40 relative bg-blueGray-100">
+  <div class="container mx-auto px-4 pb-32 pt-48">
+    <div class="items-center flex flex-wrap">
+      <div class="w-full md:w-5/12 ml-auto px-12 md:px-4">
+        <div class="md:pr-12">
+          <div
+            class="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white"
+          >
+            <!-- <i class="fas fa-file-alt text-xl"></i> -->
+            <i class="fa-solid fa-bolt"></i>
+          </div>
+          <h3 class="text-3xl font-semibold">Professional skills</h3>
+          <p class="mt-4 text-lg leading-relaxed text-blueGray-500">
+            A solid foundation in JavaScript, proficient in the use of the
+            <a style="color: green" href="https://vuejs.org/" target="'_blank'"
+              >Vue</a
+            >
+            series technology stack, and completed more than 20 project
+            development from zero to one.
+          </p>
+          <ul class="list-none mt-6">
+            <li class="py-2">
+              <div class="flex items-center">
+                <div>
+                  <span
+                    class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blueGray-500 bg-blueGray-50 mr-3"
+                  >
+                    <i class="fas fa-fingerprint"></i>
+                  </span>
+                </div>
+                <div>
+                  <h4 class="text-blueGray-500">
+                    Have the design and development capabilities of general
+                    components, complete the development of more than n
+                    components.
+                  </h4>
+                </div>
+              </div>
+            </li>
+            <li class="py-2">
+              <div class="flex items-center">
+                <div>
+                  <span
+                    class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blueGray-500 bg-blueGray-50 mr-3"
+                  >
+                    <i class="fab fa-html5"></i>
+                  </span>
+                </div>
+                <div>
+                  <h4 class="text-blueGray-500">
+                    Able to develop independently or collaboratively, with open
+                    source experience and leading experience
+                  </h4>
+                </div>
+              </div>
+            </li>
+            <li class="py-2">
+              <div class="flex items-center">
+                <div>
+                  <span
+                    class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blueGray-500 bg-blueGray-50 mr-3"
+                  >
+                    <i class="far fa-paper-plane"></i>
+                  </span>
+                </div>
+                <div>
+                  <h4 class="text-blueGray-500">
+                    Have experience in business system architecture design and
+                    R&D, and have completed more than n system business
+                    architecture design and development
+                  </h4>
+                </div>
+              </div>
+            </li>
+            <li class="py-2">
+              <div class="flex items-center">
+                <div>
+                  <span
+                    class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blueGray-500 bg-blueGray-50 mr-3"
+                  >
+                    <i class="fa-solid fa-bug"></i>
+                  </span>
+                </div>
+                <div>
+                  <h4 class="text-blueGray-500">
+                    Have a strong ability to find and solve problems, have done
+                    a lot of research needs, and have the enthusiasm and impulse
+                    to learn new technologies
+                  </h4>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="w-full md:w-6/12 mr-auto px-4 pt-24 md:pt-0">
+        <app-pie-skill></app-pie-skill>
+      </div>
+    </div>
+  </div>
+  <div class="justify-center text-center flex flex-wrap mt-24">
+    <div class="w-full md:w-6/12 px-12 md:px-4">
+      <h2 class="font-semibold text-4xl">Example Pages</h2>
+      <p class="text-lg leading-relaxed mt-4 mb-4 text-blueGray-500">
+        My Website is Based on
+        <a
+          style="color: blue"
+          href="https://github.com/creativetimofficial/notus-angular?ref=creativetim"
+          target="'_blank'"
+          >Notus Angular </a
+        >, There are a lot of code cases and templates, you can take them and
+        start playing with them.
+      </p>
+    </div>
+  </div>
+</section>
+<section class="pb-20 bg-blueGray-200 -mt-24">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-wrap">
+      <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
+        <div
+          class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
+        >
+          <div class="px-4 py-5 flex-auto">
+            <div
+              class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400"
+            >
+              <i class="fas fa-award"></i>
+            </div>
+            <h6 class="text-xl font-semibold">Dashboard</h6>
+            <p class="mt-2 mb-4 text-blueGray-500">
+              Backstage management system, display of different data lists,
+              different charts,different forms
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full md:w-4/12 px-4 text-center">
+        <div
+          class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
+        >
+          <div class="px-4 py-5 flex-auto">
+            <div
+              class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-emerald-400"
+            >
+              <i class="fa-solid fa-seedling"></i>
+            </div>
+            <h6 class="text-xl font-semibold">My Blogs</h6>
+            <p class="mt-2 mb-4 text-blueGray-500">
+              Share some of my daily life and some thoughts on technology!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-6 w-full md:w-4/12 px-4 text-center">
+        <div
+          class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
+        >
+          <div class="px-4 py-5 flex-auto">
+            <div
+              class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400"
+            >
+              <i class="fas fa-fingerprint"></i>
+            </div>
+            <h6 class="text-xl font-semibold">Personal Resume</h6>
+            <p class="mt-2 mb-4 text-blueGray-500">
+              My Personal Resume, to seek better job opportunities, better partners!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- <section class="block relative z-1 bg-blueGray-600">
+  <div class="container mx-auto">
+    <div class="justify-center flex flex-wrap">
+      <div class="w-full lg:w-12/12 px-4 -mt-24">
+        <div class="flex flex-wrap">
+          <div class="w-full lg:w-4/12 px-4">
+            <h5 class="text-xl font-semibold pb-4 text-center">Login Page</h5>
+            <a [routerLink]="['/auth/login']">
+              <div
+                class="hover:-mt-4 relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg ease-linear transition-all duration-150"
+              >
+                <img
+                  alt="..."
+                  class="align-middle border-none max-w-full h-auto rounded-lg"
+                  src="assets/img/login.jpg"
+                />
+              </div>
+            </a>
+          </div>
+
+          <div class="w-full lg:w-4/12 px-4">
+            <h5 class="text-xl font-semibold pb-4 text-center">Profile Page</h5>
+            <a [routerLink]="['/profile']">
+              <div
+                class="hover:-mt-4 relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg ease-linear transition-all duration-150"
+              >
+                <img
+                  alt="..."
+                  class="align-middle border-none max-w-full h-auto rounded-lg"
+                  src="assets/img/profile.jpg"
+                />
+              </div>
+            </a>
+          </div>
+
+          <div class="w-full lg:w-4/12 px-4">
+            <h5 class="text-xl font-semibold pb-4 text-center">Landing Page</h5>
+            <a [routerLink]="['/landing']">
+              <div
+                class="hover:-mt-4 relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg ease-linear transition-all duration-150"
+              >
+                <img
+                  alt="..."
+                  class="align-middle border-none max-w-full h-auto rounded-lg"
+                  src="assets/img/landing.jpg"
+                />
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<app-footer></app-footer>
